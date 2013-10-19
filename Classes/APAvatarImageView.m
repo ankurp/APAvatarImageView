@@ -10,8 +10,6 @@
 
 @interface APAvatarImageView ()
 
-@property (nonatomic, retain) CALayer *roundBorderLayer;
-
 - (void)draw;
 
 @end
@@ -88,20 +86,18 @@
     if (frame.size.width != frame.size.height) {
         NSLog(@"Warning: Height and Width should be the same for image view");
     }
-    [_roundBorderLayer removeFromSuperlayer];
-    _roundBorderLayer = [self layer];
-    [_roundBorderLayer removeFromSuperlayer];
-    [_roundBorderLayer setMasksToBounds:YES];
-    [_roundBorderLayer setCornerRadius:(frame.size.height / 2)];
+    CALayer *l = [self layer];
+    [l setMasksToBounds:YES];
+    [l setCornerRadius:(frame.size.height / 2)];
     if (_borderWidth < 0) { // Default case
-        [_roundBorderLayer setBorderWidth:3.0];
+        [l setBorderWidth:3.0];
     } else {
-        [_roundBorderLayer setBorderWidth:_borderWidth];
+        [l setBorderWidth:_borderWidth];
     }
     if (_borderColor == nil) {
-        [_roundBorderLayer setBorderColor:[[UIColor lightGrayColor] CGColor]];
+        [l setBorderColor:[[UIColor lightGrayColor] CGColor]];
     } else {
-        [_roundBorderLayer setBorderColor:[_borderColor CGColor]];
+        [l setBorderColor:[_borderColor CGColor]];
     }
 }
 
