@@ -1,7 +1,7 @@
-AvatarImageView
+APAvatarImageView
 ===============
 
-## BSModalPickerView
+## APAvatarImageView
 
 Subclass of UIImageView to create a circle avatar image view with configuration border width and border color
 
@@ -31,7 +31,7 @@ Finally, add the Custom class of APAvatarImageView to UIImageView in Interface B
 APAvatarImageView *avatarImageView = [[APAvatarImageView alloc] initWithImage:[UIImage imageNamed:@"profile"] borderColor:[UIColor blackColor] borderWidth:1.0];
 ```
 
-You can change the color or width of the border by setting borderColor or borderWidth values to a created avatarImageView
+You can change the color or width of the border by setting borderColor or borderWidth value
 
 ```objc
 avatarImageView.borderColor = [UIColor redColor];
