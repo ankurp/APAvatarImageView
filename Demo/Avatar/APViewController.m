@@ -27,9 +27,7 @@
     [self.view addSubview:avatarImageView];
     
     avatarImageView.borderColor = [UIColor redColor];
-    
-//    avatarImageView.borderColor = [UIColor redColor];
-//    avatarImageView.borderWidth = 3.0;
+    avatarImageView.borderWidth = 3.0;
 }
 
 - (void)didReceiveMemoryWarning
