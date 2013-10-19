@@ -1,4 +1,47 @@
 AvatarImageView
 ===============
 
+## BSModalPickerView
+
 Subclass of UIImageView to create a circle avatar image view with configuration border width and border color
+
+## Usage
+
+Usage is easy:
+
+Add the dependency to your `Podfile`:
+
+```ruby
+platform :ios
+pod 'APAvatarImageView', :git => 'https://github.com/ankurp/APAvatarImageView' # remove :git option when its in the Cocoapod Specs
+...
+```
+
+Run `pod install` to install the dependencies.
+
+Next, import the header file wherever you want to use the picker:
+
+```objc
+#import <APAvatarImageView/APAvatarImageView.h>
+```
+
+Finally, add the Custom class of APAvatarImageView to UIImageView in Interface Builder or you can create it programatically using the following command:
+
+```objc
+APAvatarImageView *avatarImageView = [[APAvatarImageView alloc] initWithImage:[UIImage imageNamed:@"profile"] borderColor:[UIColor blackColor] borderWidth:1.0];
+```
+
+You can change the color or width of the border by setting borderColor or borderWidth values to a created avatarImageView
+
+```objc
+avatarImageView.borderColor = [UIColor redColor];
+avatarImageView.borderWidth = 3.0;
+```
+
+## Demo
+
+There is a Demo XCode project in the Demo folder. Just clone the repository and run `pod install` and run finally the project.
+
+## License
+
+Usage is provided under the [MIT License](http://http://opensource.org/licenses/mit-license.php).  See LICENSE for the full details.
