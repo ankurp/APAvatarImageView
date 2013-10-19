@@ -13,7 +13,7 @@ Add the dependency to your `Podfile`:
 
 ```ruby
 platform :ios
-pod 'APAvatarImageView', :git => 'https://github.com/ankurp/APAvatarImageView' # remove :git option when its in the Cocoapod Specs
+pod 'APAvatarImageView'
 ...
 ```
 

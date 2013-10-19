@@ -1,2 +1,3 @@
 platform :ios
-pod 'APAvatarImageView', :git => "https://github.com/ankurp/APAvatarImageView.git"
+
+pod 'APAvatarImageView'
