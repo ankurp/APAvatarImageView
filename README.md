@@ -40,7 +40,7 @@ avatarImageView.borderWidth = 3.0;
 
 ## Demo
 
-There is a Demo XCode project in the Demo folder. Just clone the repository and run `pod install` and finally run the project.
+There is a Demo XCode project in the Demo folder. Just clone the repository and run `pod install` and finally run the project by opening the Avatar.xcworkspace
 
 ## License
 
