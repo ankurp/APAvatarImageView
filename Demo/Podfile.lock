@@ -1,0 +1,14 @@
+PODS:
+  - APAvatarImageView (1.0.0)
+
+DEPENDENCIES:
+  - APAvatarImageView (from `https://github.com/ankurp/APAvatarImageView.git`)
+
+EXTERNAL SOURCES:
+  APAvatarImageView:
+    :git: https://github.com/ankurp/APAvatarImageView.git
+
+SPEC CHECKSUMS:
+  APAvatarImageView: 1f235b06303cb4f590787972c964c371e45379f5
+
+COCOAPODS: 0.25.0
