@@ -44,4 +44,4 @@ There is a Demo XCode project in the Demo folder. Just clone the repository and 
 
 ## License
 
-Usage is provided under the [MIT License](http://http://opensource.org/licenses/mit-license.php).  See LICENSE for the full details.
+Usage is provided under the [MIT License](http://opensource.org/licenses/MIT).  See LICENSE for the full details.
