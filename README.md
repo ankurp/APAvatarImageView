@@ -19,13 +19,13 @@ pod 'APAvatarImageView', :git => 'https://github.com/ankurp/APAvatarImageView' #
 
 Run `pod install` to install the dependencies.
 
-Next, import the header file wherever you want to use the picker:
+Next, import the header file wherever you want to use the avatar image view:
 
 ```objc
 #import <APAvatarImageView/APAvatarImageView.h>
 ```
 
-Finally, add the Custom class of APAvatarImageView to UIImageView in Interface Builder or you can create it programatically using the following command:
+Finally, add the Custom class of APAvatarImageView to UIImageView in Interface Builder or you can create it programatically using the following code:
 
 ```objc
 APAvatarImageView *avatarImageView = [[APAvatarImageView alloc] initWithImage:[UIImage imageNamed:@"profile"] borderColor:[UIColor blackColor] borderWidth:1.0];
