@@ -5,6 +5,8 @@ APAvatarImageView
 
 Subclass of UIImageView to create a circle avatar image view with configurable border width and border color
 
+<img height=480 src="https://s3.amazonaws.com/cocoacontrols_production/uploads/control_image/image/2081/Screen_Shot_2013-10-19_at_2.23.37_PM.png"/>
+
 ## Usage
 
 Usage is easy:
