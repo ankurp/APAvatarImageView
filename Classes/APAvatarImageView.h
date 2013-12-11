@@ -12,6 +12,7 @@
 
 @property (nonatomic, retain) UIColor *borderColor;
 @property (nonatomic, assign) float borderWidth;
+@property (nonatomic, assign) float cornerRadius;
 
 - (id)initWithFrame:(CGRect)frame borderColor:(UIColor*)borderColor borderWidth:(float)borderWidth;
 - (id)initWithImage:(UIImage *)image borderColor:(UIColor*)borderColor borderWidth:(float)borderWidth;
