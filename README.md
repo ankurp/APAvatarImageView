@@ -47,3 +47,6 @@ There is a Demo XCode project in the Demo folder. Just clone the repository and 
 ## License
 
 Usage is provided under the [MIT License](http://opensource.org/licenses/MIT).  See LICENSE for the full details.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ankurp/apavatarimageview/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
