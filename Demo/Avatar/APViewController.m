@@ -26,8 +26,16 @@
     avatarImageView.frame = frame;
     [self.view addSubview:avatarImageView];
     
-    avatarImageView.borderColor = [UIColor redColor];
+    avatarImageView.borderColor = [UIColor brownColor];
     avatarImageView.borderWidth = 3.0;
+    avatarImageView.userInteractionEnabled = YES;
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
+    [avatarImageView addGestureRecognizer:tapGesture];
+}
+
+- (IBAction)tapAction:(id)sender {
+    [[[UIAlertView alloc]initWithTitle:@"Tap Event" message:@"You tapped on the Avatar" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
 }
 
 - (void)didReceiveMemoryWarning
