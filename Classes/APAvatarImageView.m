@@ -80,8 +80,8 @@
 - (void)draw
 {
     CGRect frame = self.frame;
-    if (frame.size.width != frame.size.height) {
-        NSLog(@"Warning: Height and Width should be the same for image view");
+    if (frame.size.width > frame.size.height + 0.5 || frame.size.width < frame.size.height - 0.5) {
+        NSLog(@"Warning: Height and Width should be the same within 1 point for image view, but was: %@", NSStringFromCGSize(self.frame.size));
     }
     CALayer *l = [self layer];
     [l setMasksToBounds:YES];
