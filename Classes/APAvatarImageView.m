@@ -20,7 +20,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        _cornerRadius = self.frame.size.height/2.0f;
         [self draw];
     }
     return self;
@@ -31,7 +30,6 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         _borderWidth = -1.0;
-        _cornerRadius = self.frame.size.height/2.0f;
         [self draw];
     }
     return self;
@@ -43,7 +41,6 @@
     if (self) {
         _borderColor = borderColor;
         _borderWidth = borderWidth;
-        _cornerRadius = self.frame.size.height/2.0f;
         [self draw];
     }
     return self;
@@ -55,7 +52,6 @@
     if (self) {
         _borderColor = borderColor;
         _borderWidth = borderWidth;
-        _cornerRadius = self.frame.size.height/2.0f;
         [self draw];
     }
     return self;
@@ -67,7 +63,6 @@
     if (self) {
         _borderColor = borderColor;
         _borderWidth = borderWidth;
-        _cornerRadius = self.frame.size.height/2.0f;
         [self draw];
     }
     return self;
@@ -87,7 +82,11 @@
 
 -(void)setCornerRadius:(float)cornerRadius
 {
-    _cornerRadius = cornerRadius;
+    [self draw];
+}
+
+-(void)layoutSubviews{
+    [super layoutSubviews];
     [self draw];
 }
 
@@ -99,7 +98,7 @@
     }
     CALayer *l = [self layer];
     [l setMasksToBounds:YES];
-    [l setCornerRadius:_cornerRadius];
+    [l setCornerRadius:self.frame.size.height/2.0f];
     if (_borderWidth < 0) { // Default case
         [l setBorderWidth:3.0];
     } else {
